@@ -60,7 +60,7 @@ insertForm.addEventListener("submit", function (event) {
 }); */
 
 // Funktion zum Senden von Daten an den Server
-async function send(url, formData) {
+/* async function send(url, formData) {
   try {
     // ReadableStreamBYOBRequest;
     const response = await fetch(url, {
@@ -126,3 +126,4 @@ function createTable(list) {
   </table>
   `;
 }
+ */
