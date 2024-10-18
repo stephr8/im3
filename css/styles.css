@@ -1,7 +1,3 @@
-/* Grundlegende Einstellungen */
-html {
-  height: 100%;
-}
 
 body {
   font-family: Nunito, sans-serif;
@@ -15,7 +11,7 @@ body {
 h1 {
   font-size: 48px;
   font-weight: 800;
-  margin: 60px 0px 12px 0px;
+  margin: 50px 0px 12px 0px;
 }
 
 h2 {
@@ -47,10 +43,26 @@ h4 {
 
 .header {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   justify-content: center;
   gap: 16px;
+  margin: 20px;
 }
+
+.selectedInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.moreInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 68px;
+}
+
 
 #genderData {
   display: flex;
@@ -93,7 +105,7 @@ input[type="date"] {
   border: 4px solid #c9ccda;
   background-color: #c9ccda;
   color: #111420;
-  margin-bottom: 20px;
+  margin: 20px;
 }
 
 #mostPlayed {
@@ -107,7 +119,7 @@ input[type="date"] {
 #topThree {
   display: flex;
   align-items: center;
-  gap: 84px;
+  gap: 104px;
 }
 
 .songImage {
@@ -116,3 +128,114 @@ input[type="date"] {
   border-radius: 8px;
 }
 
+.artistInfo{
+  display: flex;
+  gap: 8px;
+}
+
+/* Tablet (768px to 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .logo {
+    width: 64px;
+    height: 97px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  h4 {
+    font-size: 48px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .songImage {
+    width: 144px;
+    height: 144px;
+  }
+}
+
+/* Mobile (0 to 767px) */
+@media (max-width: 768px) {
+  .logo {
+    width: 40px;
+    height: 61px;
+  }
+  .header {
+    align-items: center;
+  }
+.questionMark{
+  width: 20px;
+  height: 20px;
+}
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 13px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  #genderData {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .songImage {
+    width: 104px;
+    height: 104px;
+  }
+
+  #topThree {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 36px;
+  }
+
+  .mostPlayed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  #mostPlayed {
+    align-items: flex-start;
+  }
+
+  .mostPlayedInfo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  input[type="date"] {
+    font-size: 12px;
+    height: 60%;
+  }
+  .moreInfo{
+    padding: 0px;
+  }
+}

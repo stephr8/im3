@@ -2,8 +2,6 @@
 
 $songs = include('extract.php');
 
-// $locations durchloopen, um aus den "longitude" und "latitude" Werten die korrekten Städtenamen aus einem array von lat, long Werten zu erhalten
-
 $transformierteDaten = [];
 
 
