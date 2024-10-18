@@ -75,7 +75,7 @@ chart = new Chart(ctx, {
         scales: {
             y: {
                 beginAtZero: true,
-                max: 140
+                max: 200
             }
         },
         maintainAspectRatio: false,
